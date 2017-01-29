@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Shortcuts">
+        <menu>
+            <item
+                android:id="@+id/nav_order"
+                android:title="      Order Vegetables" />
+
+        </menu>
+    </item>
+
+    <item android:title="Settings">
+        <menu>
+            <item
+                android:id="@+id/nav_update_profile"
+                android:title="      Update Profile" />
+            <item
+                android:id="@+id/nav_update_password"
+                android:title="      Update Password" />
+
+        </menu>
+    </item>
+
+    <item android:title="Other">
+        <menu>
+            <item
+                android:id="@+id/nav_abt"
+                android:title="      About Us" />
+            <item
+                android:id="@+id/nav_help"
+                android:title="      Help" />
+            <item
+                android:id="@+id/nav_logout"
+                android:title="      Logout" />
+        </menu>
+    </item>
+</menu>

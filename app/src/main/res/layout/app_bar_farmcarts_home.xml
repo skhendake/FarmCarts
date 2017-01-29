@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.fsp.farmcarts.UserApp.MainActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        android:background="@color/colorPrimary">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            app:contentInsetEnd="0dp"
+            app:contentInsetStart="0dp"
+            android:background="@color/colorPrimary">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|right">
+                <TextView
+                    android:layout_gravity="center|left"
+                    android:text="@string/app_name"
+                    android:textColor="#ffffff"
+                    android:textSize="21dp"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="0"
+                    android:layout_height="wrap_content" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="right">
+                    <ImageView
+                        android:id="@+id/notification_icon"
+                        android:src="@drawable/ic_notifications_active_white_24dp"
+                        android:layout_width="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_height="35dp" />
+                    <Button
+                        android:layout_gravity="center|right"
+                        android:id="@+id/btn_location"
+                        android:background="#21CE99"
+                        android:minHeight="0dp"
+                        android:textAllCaps="false"
+                        android:text="Not Found"
+                        android:textSize="@dimen/heading_text"
+                        android:textColor="#ffffff"
+                        android:layout_width="wrap_content"
+                        android:singleLine="true"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+                        android:maxWidth="130dp"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/content_main" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        app:srcCompat="@android:drawable/ic_dialog_email" />
+
+</android.support.design.widget.CoordinatorLayout>
